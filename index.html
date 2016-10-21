@@ -1,4 +1,4 @@
-<html ng-app="">
+<html ng-app="snapsot">
 <head>
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
@@ -7,13 +7,17 @@
     <script src="bower_components/angular/angular.js"></script>
     </head>
     <body >
-    <div class="container">
+    <div class="container" ng-controller="headerctrl">
 
 
-        <div ng-include="'header/headernavbar.html'"></div>
+        <div ng-include="headerurl"></div>
         <div ng-include="'login/register.html'"></div>
         <div ng-include="'register/register.html'"></div>
 
         </div>
+        <script src="header/header.js"></script>
+        <script src="login/login.js"></script>
+        <script src="header/headercontroller.js"></script>
+        <script src="app.js"></script>
     </body>
 </html>
